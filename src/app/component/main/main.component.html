@@ -1,20 +1,17 @@
-<!-- <div id="box-main">
-    <div id="card-main" *ngFor="let person of array">
-        <div id="box-img">
-            <img src="favicon.ico" alt="imagen">
-        </div>
-        <div id="box-data">
-            {{person.firstname}}
-            {{person.lastname}}
-            {{person.age}}
-        </div>
-    </div>
-</div> -->
+<div id="box-form">
+    <label for="">Nombre</label>
+    <input type="text" [(ngModel)]="firstname">
+    <label for="">Apellido</label>
+    <input type="text" [(ngModel)]="lastname">
+    <label for="">Edad'</label>
+    <input type="number" [(ngModel)]="age">
+</div>
 <section>
-    <button (click)="addStudent">Agregar Students</button>
-    <button (click)="getStudents">Cargar</button>
+    <button (click)="addStudent()">Agregar estudiante</button>
+    <button (click)="getStudents()">Cargar</button>
     <div id="cards" *ngFor="let student of students">
         <app-card [student]="student" (messageEvent)="receiveMessage($event)"></app-card>
     </div>
+    
 </section>
   

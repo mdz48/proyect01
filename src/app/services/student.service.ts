@@ -15,9 +15,7 @@ export class StudentService {
 
   public addStudent(student: Student): boolean {
     let aux = this.students.length;
-    let l = this.students.push(student);
-    if (l > aux) {
-      console.log(this.students);
+    if (this.students.push(student) > aux) {
       return true;
     }
     return false;
