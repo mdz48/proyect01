@@ -6,7 +6,7 @@
 }
 
 #card-main {
-    background-color: #c7efff;
+    background-color: #A7D129;
     width: 40%;
     height: 40%;
     display: flex;
@@ -26,10 +26,38 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 60%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #box-form {
     display: flex;
     flex-direction: column;
     width: 20%;
+}
+
+#content-students {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+#cards {
+}
+
+#form-btn {
+    display: flex;
+}
+
+button {
+    background-color: inherit;
+    padding: 5%  5%;
+    border-radius: 35px;
+    font-weight: bold;
 }

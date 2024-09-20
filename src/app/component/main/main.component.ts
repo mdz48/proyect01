@@ -27,10 +27,6 @@ export class MainComponent {
   }
 
   addStudent() {
-    if (this.age === 0) {
-      alert('Ingrese una edad')
-    }
-
 
     let student : Student = {
       firstname : this.firstname,

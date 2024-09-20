@@ -1,17 +1,25 @@
-<div id="box-form">
-    <label for="">Nombre</label>
-    <input type="text" [(ngModel)]="firstname">
-    <label for="">Apellido</label>
-    <input type="text" [(ngModel)]="lastname">
-    <label for="">Edad'</label>
-    <input type="number" [(ngModel)]="age">
-</div>
-<section>
-    <button (click)="addStudent()">Agregar estudiante</button>
-    <button (click)="getStudents()">Cargar</button>
-    <div id="cards" *ngFor="let student of students">
-        <app-card [student]="student" (messageEvent)="receiveMessage($event)"></app-card>
+<main>
+    <div id="content-students">
+        <div id="box-form">
+            <label for="">Nombre</label>
+            <input type="text" [(ngModel)]="firstname">
+            <label for="">Apellido</label>
+            <input type="text" [(ngModel)]="lastname">
+            <label for="">Edad'</label>
+            <input type="number" [(ngModel)]="age">
+            <div id="form-btn">
+                <button (click)="addStudent()">Agregar estudiante</button>
+                <button (click)="getStudents()">Cargar</button>
+            </div>
+        </div>
+        <section>
+            <div id="cards" *ngFor="let student of students">
+                <app-card [student]="student" (messageEvent)="receiveMessage($event)"></app-card>
+            </div>
+        </section>
     </div>
-    
-</section>
+</main>
+
+
+
   

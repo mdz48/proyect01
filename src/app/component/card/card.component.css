@@ -1,8 +1,26 @@
 main {
-    background-color: azure;
+    background-color: #A7D129;
     padding: 10px;
-    width: 50%;
     width: 250px;
-    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 15px;
+    margin-bottom: 10px;
+}
+
+#box-card {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: inherit;
+    padding: 5%  5%;
+    border-radius: 35px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
 }
 
